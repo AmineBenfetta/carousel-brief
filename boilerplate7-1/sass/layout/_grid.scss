@@ -1,0 +1,19 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+  @include respond-to(md) {
+    width: 80%;
+  }
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@for $i from 1 through 12 {
+  .col-#{$i} {
+    flex: 0 0 percentage($i / 12);
+    padding: 1rem;
+  }
+}
