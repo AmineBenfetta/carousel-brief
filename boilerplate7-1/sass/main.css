@@ -159,18 +159,6 @@ body {
   font-size: 2rem;
 }
 
-section {
-  height: 35vh;
-  width: 35vh;
-  margin: 5vh;
-}
-
-#carousel {
-  background-color: orange;
-  height: 35vh;
-  width: 50vh;
-}
-
 :root {
   --primary: #3498db;
   --secondary: #2ecc71;
