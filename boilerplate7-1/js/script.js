@@ -1,29 +1,22 @@
-let slideIndex = 1;
-const slides = document.querySelectorAll('.slides');
+let cards = document.querySelectorAll(".image-card");
+const nextBtn = document.getElementById("next-btn");
 
-function showSlide(n) {
-    if (n > slides.length) {
-        n = 1;
-    } else if (n < 1) {
-        n = slides.length;
-    }
-    slideIndex =n;
+let currentIndex = 0;
+updateCarousel();
 
-    for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = 'none';
-    }
-    slides[slideIndex-1].style.display = 'block';
-    const currentSlide = slides[slideIndex - 1];
-    const counter = currentSlide.querySelector('.num');
-    const text = slideIndex + '/' + slides.length;
-    counter.textContent = text;
+function updateCarousel() {
+    cards.forEach((card) => {
+        card.style.display = "none";
+
+    });
+    cards[currentIndex].style.display = "block";
+    
+let carouselIndicator = document.getElementById("carousel-indicator");
+carouselIndicator.textContent = `${currentIndex + 1} / ${cards.length}`;
 }
 
-function plusSlides(n) {
-    slideIndex += n;
-    showSlide(slideIndex);
-}
-
-document.addEventListener('DOMContentLoaded', () => {
-    showSlide(slideIndex);
+nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % cards.length;
+        updateCarousel();
+    
 });
