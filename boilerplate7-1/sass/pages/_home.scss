@@ -61,3 +61,18 @@ body {
   object-fit: contain;
 }
 
+#next-btn {
+  display: inline-block;
+  margin: 15px auto 0;
+  padding: 10px 25px;
+  border: none;
+  background: linear-gradient(135deg, #63b9ff, #3b3bff);
+  color: #fff;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+#next-btn:hover {
+  background: linear-gradient(135deg, #5848e6, #2b2bf5);
+}
