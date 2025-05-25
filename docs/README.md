@@ -57,7 +57,7 @@ boilerplate7-1/
 
 ## 📸 Aperçu
 
-![Aperçu du carousel](/boilerplate7-1/img/aperçu%20carousel.png)
+![Aperçu du carousel](/docs/img/aperçu%20carousel.png)
 
 ## Pistes d'amélioration
 
