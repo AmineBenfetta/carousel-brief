@@ -1,3 +1,4 @@
+"use strict";
 let cards = document.querySelectorAll(".image-card");
 const nextBtn = document.getElementById("next-btn");
 let carouselIndicator = document.getElementById("carousel-indicator");
