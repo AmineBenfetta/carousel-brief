@@ -1,0 +1,6 @@
+.site-header {
+  background-color: $primary-color;
+  color: #fff;
+  padding: 1rem 2rem;
+  @include flex-center;
+}
